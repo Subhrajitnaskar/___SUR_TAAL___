@@ -5,7 +5,7 @@
 A modern, responsive music studio website built using HTML, CSS, and JavaScript.
 
 🔗 Live Website:
-https://subhrajitnaskar.github.io/__SUR_TAAL__/
+https://subhrajitnaskar.github.io/___SUR_TAA____/
 
 ---
 
