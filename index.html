@@ -6,21 +6,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sur Taal Studio | Practice • Create • Record • Perform</title>
+<title>Sur Taal Studio</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-
-<nav>
+<header class="navbar">
 
 <div class="logo-box">
 
@@ -36,272 +37,362 @@
 
 </div>
 
+<nav>
+
 <ul>
 
 <li><a href="#home">Home</a></li>
-
-<li><a href="#gallery">Gallery</a></li>
-
 <li><a href="#equipment">Equipment</a></li>
-
 <li><a href="#pricing">Pricing</a></li>
-
 <li><a href="#reviews">Reviews</a></li>
-
 <li><a href="#contact">Contact</a></li>
 
 </ul>
 
 </nav>
 
+<div class="menu-btn">
+
+<i class="fas fa-bars"></i>
+
+</div>
+
+</header>
+
 <!-- HERO -->
 
 <section id="home" class="hero">
 
-<div class="overlay">
+<div class="hero-overlay"></div>
 
-<img src="images/musicphoto.jpeg" class="hero-logo">
+<div class="hero-content">
 
-<h1>
-PRACTICE • CREATE • RECORD • PERFORM
-</h1>
+<img src="images/musicphoto.jpeg"
+class="hero-logo"
+alt="Sur Taal Studio">
 
-<h2>
-Professional Jam Room & Recording Studio
-</h2>
+<h1>SUR TAAL STUDIO</h1>
+
+<h2>Practice. Create. Record. Perform.</h2>
 
 <p>
-Budget Friendly Studio For Every Musician
+
+Professional Budget Friendly Studio For Every Musician
+
 </p>
 
-<div class="hero-price">
-₹99 / HOUR
-</div>
+<div class="hero-buttons">
 
-<a
-href="https://wa.me/917044774652"
-target="_blank"
-class="btn">
+<a href="#booking" class="btn-primary">
 
-BOOK NOW
+Book Now
+
+</a>
+
+<a href="#equipment" class="btn-secondary">
+
+Explore Equipment
 
 </a>
 
 </div>
 
+</div>
+
 </section>
+<!-- ABOUT / FOUNDER -->
 
-<!-- ABOUT -->
+<section class="about section">
 
-<section class="about" data-aos="fade-up">
+<h2 class="section-title">About Sur Taal Studio</h2>
 
-<h2 class="section-title">
-Welcome To Sur Taal Studio
-</h2>
+<div class="about-container">
+
+<div class="about-image">
+
+<img src="images/founder.jpeg" alt="Founder">
+
+</div>
+
+<div class="about-content">
+
+<h3>Founder</h3>
 
 <p>
 
-Sur Taal Studio is a professional rehearsal and
-recording space located in Sonarpur.
-
-Whether you are a drummer, guitarist, singer,
-band member, content creator or performer,
-we provide an affordable environment for
-practice, creativity and recording.
-
-Raw Audio Recording and Video Footage
-are available for every session.
+Welcome to Sur Taal Studio — a creative and affordable music space where musicians,
+bands, students, content creators and performers can practice, record and create freely.
 
 </p>
 
+<p>
+
+Our goal is to provide a professional environment with quality equipment at a budget-friendly price.
+
+</p>
+
+<p>
+
+Practice. Create. Record. Perform.
+
+</p>
+
+</div>
+
+</div>
+
 </section>
 
-<!-- GALLERY -->
 
-<section id="gallery">
+<!-- EQUIPMENT -->
+
+<section id="equipment" class="section">
 
 <h2 class="section-title">
+
+Included Equipment
+
+</h2>
+
+<p class="section-subtitle">
+
+Click any equipment to view its image
+
+</p>
+
+<div class="equipment-grid">
+
+<div class="equipment-card"
+onclick="openGallery('amplifier.jpeg')">
+
+<img src="images/amplifier.jpeg">
+
+<h3>Amplifier</h3>
+
+</div>
+
+<div class="equipment-card"
+onclick="openGallery('keyboard.jpeg')">
+
+<img src="images/keyboard.jpeg">
+
+<h3>Keyboard</h3>
+
+</div>
+
+<div class="equipment-card"
+onclick="openGallery('percussion.jpeg')">
+
+<img src="images/percussion.jpeg">
+
+<h3>Percussion</h3>
+
+</div>
+
+<div class="equipment-card"
+onclick="openGallery('acoustic.jpeg')">
+
+<img src="images/acoustic.jpeg">
+
+<h3>Acoustic Guitar</h3>
+
+</div>
+
+<div class="equipment-card"
+onclick="openGallery('tabla.jpeg')">
+
+<img src="images/tabla.jpeg">
+
+<h3>Tabla</h3>
+
+</div>
+
+<div class="equipment-card"
+onclick="openGallery('ukulele.jpeg')">
+
+<img src="images/ukulele.jpeg">
+
+<h3>Ukulele</h3>
+
+</div>
+
+<div class="equipment-card"
+onclick="openGallery('harmonium.jpeg')">
+
+<img src="images/harmonium.jpeg">
+
+<h3>Harmonium</h3>
+
+</div>
+
+<div class="equipment-card"
+onclick="openGallery('flute.jpeg')">
+
+<img src="images/flute.jpeg">
+
+<h3>Flute</h3>
+
+</div>
+
+<div class="equipment-card"
+onclick="openGallery('khol.jpeg')">
+
+<img src="images/khol.jpeg">
+
+<h3>Khol</h3>
+
+</div>
+
+<div class="equipment-card"
+onclick="openGallery('mouth_organ.jpeg')">
+
+<img src="images/mouth_organ.jpeg">
+
+<h3>Mouth Organ</h3>
+
+</div>
+
+<div class="equipment-card"
+onclick="openGallery('cajon.jpeg')">
+
+<img src="images/cajon.jpeg">
+
+<h3>Cajon</h3>
+
+</div>
+
+<div class="equipment-card"
+onclick="openGallery('djembe.jpeg')">
+
+<img src="images/djembe.jpeg">
+
+<h3>Djembe</h3>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- STUDIO GALLERY -->
+
+<section class="section">
+
+<h2 class="section-title">
+
 Studio Gallery
+
 </h2>
 
 <div class="gallery-grid">
 
-<img src="images/pic1.jpeg" alt="">
-<img src="images/studio2.jpeg" alt="">
-<img src="images/studio3.jpeg" alt="">
-<img src="images/studio4.jpeg" alt="">
-<img src="images/studio5.jpeg" alt="">
-<img src="images/studio6.jpeg" alt="">
+<img src="images/studio2.jpeg">
+<img src="images/studio3.jpeg">
+<img src="images/studio4.jpeg">
+<img src="images/studio5.jpeg">
+<img src="images/studio6.jpeg">
 
 </div>
 
 </section>
 
-<!-- EQUIPMENT -->
 
-<section id="equipment">
-
-<h2 class="section-title">
-Included Equipment
-</h2>
-
-<div class="equipment-grid">
-
-<div class="card"
-onclick="openModal('images/drums.jpg')">
-
-🥁
-
-<h3>Pearl Drum Kit</h3>
-
-<p>
-Professional Drum Setup
-</p>
-
-</div>
-
-<div class="card"
-onclick="openModal('images/mic.jpg')">
-
-🎤
-
-<h3>Condenser Microphone</h3>
-
-<p>
-Studio Quality Recording
-</p>
-
-</div>
-
-<div class="card"
-onclick="openModal('images/amplifier.jpg')">
-
-🔊
-
-<h3>Amplifiers</h3>
-
-<p>
-High Quality Sound
-</p>
-
-</div>
-
-<div class="card"
-onclick="openModal('images/keyboard.jpg')">
-
-🎹
-
-<h3>Keyboard / Piano</h3>
-
-<p>
-Available For Practice
-</p>
-
-</div>
-
-<div class="card"
-onclick="openModal('images/percussion.jpg')">
-
-🪘
-
-<h3>Percussion Instruments</h3>
-
-<p>
-Creative Rhythm Setup
-</p>
-
-</div>
-
-<div class="card"
-onclick="openModal('images/acoustic.jpg')">
-
-🎵
-
-<h3>Acoustic Treatment</h3>
-
-<p>
-Controlled Studio Environment
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- IMAGE MODAL -->
-
-<div id="modal">
-
-<span onclick="closeModal()">×</span>
-
-<img id="modalImage">
-
-</div>
 <!-- PRICING -->
 
-<section id="pricing">
+<section id="pricing" class="pricing">
 
 <h2 class="section-title">
-Studio Pricing
-</h2>
 
-<div class="price-container">
+Pricing
+
+</h2>
 
 <div class="price-card">
 
-<h3>Studio Rental</h3>
+<h3>Studio Rent</h3>
 
 <h1>₹99</h1>
 
 <p>Per Hour</p>
 
+</div>
+
+<div class="addons">
+
+<h3>Add-On Instruments & Accessories</h3>
+
 <ul>
-<li>Full Studio Access</li>
-<li>Raw Audio Recording</li>
-<li>Video Footage</li>
-<li>WiFi Access</li>
+
+<li>Cymbals — ₹20</li>
+<li>Tabla Pair — ₹20</li>
+<li>Piano / Keyboard — ₹50</li>
+<li>Sri Khol — ₹20</li>
+<li>Acoustic Guitar — ₹30</li>
+<li>Harmonium — ₹20</li>
+<li>Ukulele — ₹20</li>
+<li>Flute — ₹20</li>
+<li>Cajon — ₹25</li>
+<li>Mouth Organ — ₹20</li>
+<li>Dholok — ₹20</li>
+<li>Djembe — ₹20</li>
+
 </ul>
 
 </div>
 
-</div>
-
 </section>
+<!-- BOOKING -->
 
-<!-- ADD-ON INSTRUMENTS -->
-
-<section id="addons">
+<section id="booking" class="section">
 
 <h2 class="section-title">
-Add-on Instruments
+Book Your Session
 </h2>
 
-<div class="addon-grid">
+<div class="booking-box">
 
-<div>🎸 Acoustic Guitar - ₹30</div>
+<input
+type="text"
+id="name"
+placeholder="Your Name">
 
-<div>🎹 Keyboard - ₹50</div>
+<input
+type="tel"
+id="phone"
+placeholder="Phone Number">
 
-<div>🎵 Ukulele - ₹20</div>
+<input
+type="date"
+id="date">
 
-<div>🪘 Cajon - ₹25</div>
+<input
+type="time"
+id="time">
 
-<div>🥁 Tabla - ₹20</div>
+<select id="session">
 
-<div>🪘 Dholok - ₹20</div>
+<option>
+Practice Session
+</option>
 
-<div>🪘 Djembe - ₹20</div>
+<option>
+Recording Session
+</option>
 
-<div>🎶 Sri Khol - ₹20</div>
+<option>
+Band Rehearsal
+</option>
 
-<div>🎼 Harmonium - ₹20</div>
+</select>
 
-<div>🎵 Flute - ₹20</div>
+<button
+class="book-btn"
+onclick="submitBooking()">
 
-<div>🎶 Mouth Organ - ₹20</div>
+Book Now
 
-<div>🥁 Cymbal - ₹20 each</div>
+</button>
 
 </div>
 
@@ -309,24 +400,26 @@ Add-on Instruments
 
 <!-- REVIEWS -->
 
-<section id="reviews">
+<section id="reviews" class="section">
 
 <h2 class="section-title">
+
 Musician Reviews
+
 </h2>
 
-<div class="review-grid">
+<div class="reviews-grid">
 
 <div class="review-card">
 
 ⭐⭐⭐⭐⭐
 
 <p>
-Affordable and clean rehearsal space.
-Great atmosphere.
-</p>
 
-<h4>Local Musician</h4>
+Excellent affordable studio.
+Very comfortable environment.
+
+</p>
 
 </div>
 
@@ -335,10 +428,10 @@ Great atmosphere.
 ⭐⭐⭐⭐⭐
 
 <p>
-Perfect place for practice sessions.
-</p>
 
-<h4>Student Band</h4>
+Perfect place for band rehearsals.
+
+</p>
 
 </div>
 
@@ -347,10 +440,10 @@ Perfect place for practice sessions.
 ⭐⭐⭐⭐⭐
 
 <p>
-Good sound and recording setup.
-</p>
 
-<h4>Content Creator</h4>
+Great recording setup and sound quality.
+
+</p>
 
 </div>
 
@@ -358,70 +451,49 @@ Good sound and recording setup.
 
 </section>
 
-<!-- BOOKING -->
+<!-- CONTACT -->
 
-<section id="booking">
-
-<h2 class="section-title">
-Book Your Slot
-</h2>
-
-<form class="booking-form">
-
-<input type="text" placeholder="Your Name" required>
-
-<input type="tel" placeholder="Phone Number" required>
-
-<input type="date" required>
-
-<input type="time" required>
-
-<select>
-
-<option>Practice Session</option>
-
-<option>Recording Session</option>
-
-<option>Band Rehearsal</option>
-
-</select>
-
-<button type="submit">
-Book Now
-</button>
-
-</form>
-
-</section>
-
-<!-- FOUNDER -->
-
-<section id="founder">
+<section id="contact" class="section">
 
 <h2 class="section-title">
-Meet The Founder
+
+Contact Us
+
 </h2>
 
-<div class="founder-box">
+<div class="contact-grid">
 
-<img src="images/founder.jpg" alt="Founder">
+<div class="contact-card">
 
-<div>
-
-<h3>Joy Naskar</h3>
+<h3>📞 Phone</h3>
 
 <p>
-
-Founder of Sur Taal Studio.
-
-Our mission is to provide an affordable
-space where musicians can practice,
-record and create freely.
-
-Every artist deserves a quality
-environment regardless of budget.
-
+7044774652
 </p>
+
+</div>
+
+<div class="contact-card">
+
+<h3>📧 Email</h3>
+
+<p>
+joynaskar17@gmail.com
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<h3>📸 Instagram</h3>
+
+<a
+href="https://www.instagram.com/pratyush.naskar_?igsh=N3p2Z29sNWl1bm1i"
+target="_blank">
+
+Visit Instagram
+
+</a>
 
 </div>
 
@@ -431,26 +503,33 @@ environment regardless of budget.
 
 <!-- LOCATION -->
 
-<section id="location">
+<section class="section">
 
 <h2 class="section-title">
-Find Us
+
+Studio Location
+
 </h2>
 
-<div class="contact-box">
+<div class="location-box">
 
 <h3>
-📍 SONARPUR KHURIGACHI GOLDEN CLUB
+
+SONARPUR KHURIGACHI
+GOLDEN CLUB
 TARAMA MA MANDIR
 INSTRASOY HOUSE
+
 </h3>
 
-<a
-href="https://maps.app.goo.gl/sBNnP1BihMibTXi67"
-target="_blank"
-class="btn">
+<br>
 
-OPEN LOCATION
+<a
+href="https://share.google/HjTJXYuGNrbWnj0OE"
+target="_blank"
+class="btn-primary">
+
+Open Google Maps
 
 </a>
 
@@ -458,45 +537,82 @@ OPEN LOCATION
 
 </section>
 
-<!-- CONTACT -->
+<!-- RULES -->
 
-<section id="contact">
+<section class="section">
 
 <h2 class="section-title">
-Contact Us
+
+Studio Rules
+
 </h2>
 
-<div class="contact-box">
+<div class="rules-grid">
 
-<h3>📞 7044774652</h3>
+<div class="rule-card">
 
-<h3>📧 joynaskar17@gmail.com</h3>
+✅ Hi-Hat Included
 
-<h3>
-📸 Instagram:
-@pratyush.naskar_
-</h3>
+</div>
 
-<p>
+<div class="rule-card">
 
-⚠️ Any damage to instruments,
-equipment or studio property
-must be paid by the customer.
+✅ Raw Audio Recording Included
 
-</p>
+</div>
+
+<div class="rule-card">
+
+✅ Video Footage Available
+
+</div>
+
+<div class="rule-card">
+
+⚠ Any Damage To Equipment Must Be Paid By Customer
+
+</div>
+
+<div class="rule-card">
+
+✅ Payment Before Session
+
+</div>
+
+<div class="rule-card">
+
+✅ Respect Studio Equipment
+
+</div>
 
 </div>
 
 </section>
+
+<!-- POPUP GALLERY -->
+
+<div id="popup" class="popup">
+
+<span
+class="close-btn"
+onclick="closeGallery()">
+
+&times;
+
+</span>
+
+<img id="popup-img">
+
+</div>
 
 <!-- WHATSAPP BUTTON -->
 
 <a
 href="https://wa.me/917044774652"
 target="_blank"
-class="whatsapp">
+class="whatsapp-btn">
 
-💬
+<i class="fab fa-whatsapp"></i>
 
 </a>
 
@@ -504,27 +620,38 @@ class="whatsapp">
 
 <footer>
 
-<h2>Sur Taal Studio</h2>
+<img
+src="images/musicphoto.jpeg"
+alt="Logo"
+class="footer-logo">
+
+<h2>
+
+Sur Taal Studio
+
+</h2>
 
 <p>
+
 Practice • Create • Record • Perform
+
 </p>
 
 <p>
+
+Your Sound, Your Space
+
+</p>
+
+<p>
+
 © 2026 Sur Taal Studio
+
 </p>
 
 </footer>
 
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-<script>
-AOS.init({
-duration:1000
-});
-</script>
-
 <script src="script.js"></script>
 
 </body>
-</html
+</html>
